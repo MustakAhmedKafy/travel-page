@@ -1,5 +1,5 @@
 <template>
-  <div class="container md:px-12 px-6">
+  <div class="container md:px-12 px-6 mb-8">
     <div class="overflow-x-auto">
       <table class="min-w-full bg-white">
         <thead class="text-gray-500 bg-[#e5e7eb]">
@@ -21,13 +21,27 @@
             :key="index"
             class="odd:bg-white odd:dark:bg-gray-900 even:bg-[#e5e7eb] border-blue-700"
           >
-            <td class="py-2 px-4 border-b">{{ flight.flight }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.aircraft }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.class }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.fare }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.route }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.departure }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.arrival }}</td>
+            <td class="py-2 px-4 border-b">
+              <p>{{ flight.flight[0] }}</p>
+              <p>{{ flight.flight[1] }}</p>
+            </td>
+            <td class="py-2 px-4 border-b text-center">
+              <p>
+                {{ flight.aircraft[0] }}
+              </p>
+              <p>{{ flight.aircraft[1] }}</p>
+            </td>
+            <td class="py-2 px-4 border-b">
+              <p>{{ flight.class[0] }}</p>
+              <p>{{ flight.class[1] }}</p>
+            </td>
+            <td class="py-2 px-4 border-b">
+              <p>{{ flight.fare[0] }}</p>
+              <p>{{ flight.fare[1] }}</p>
+            </td>
+            <td class="py-2 px-4 border-b"><p>{{ flight.route[0] }}</p> <p>{{ flight.route[1] }}</p></td>
+            <td class="py-2 px-4 border-b"><p>{{ flight.departure[0] }}</p><p>{{ flight.departure[1] }}</p></td>
+            <td class="py-2 px-4 border-b"><p>{{ flight.arrival[0] }}</p><p>{{ flight.arrival[1] }}</p></td>
             <td class="py-2 px-4 border-b">{{ flight.duration }}</td>
             <td class="py-2 px-4 border-b text-center">
               {{ flight.price }}
@@ -35,7 +49,6 @@
                 SELECT
               </button>
             </td>
-         
           </tr>
         </tbody>
       </table>
@@ -60,21 +73,16 @@ onMounted(async () => {
       const segments = itinerary.segments || [];
 
       return {
-        flight: segments
-          .map((seg) => `${seg.carrierCode}${seg.flightNumber}`)
-          .join(", "),
-        aircraft: segments.map((seg) => seg.aircraft || "N/A").join(", "),
-        class:
-          offer.class && offer.class[0] ? offer.class[0].join(", ") : "N/A",
+        flight: segments.map((seg) => `${seg.carrierCode}${seg.flightNumber}`),
+        aircraft: segments.map((seg) => seg.aircraft || "N/A"),
+        class: offer.class && offer.class[0] ? offer.class[0] : "N/A",
         fare:
-          offer.fareBasis && offer.fareBasis[0]
-            ? offer.fareBasis[0].join(", ")
-            : "N/A",
-        route: segments
-          .map((seg) => `${seg.departure.iataCode}-${seg.arrival.iataCode}`)
-          .join(", "),
-        departure: segments.map((seg) => seg.departure.at).join(", "),
-        arrival: segments.map((seg) => seg.arrival.at).join(", "),
+          offer.fareBasis && offer.fareBasis[0] ? offer.fareBasis[0] : "N/A",
+        route: segments.map(
+          (seg) => `${seg.departure.iataCode}-${seg.arrival.iataCode}`
+        ),
+        departure: segments.map((seg) => seg.departure.at),
+        arrival: segments.map((seg) => seg.arrival.at),
         duration: itinerary.duration || "N/A",
         price: offer.price || "N/A",
       };
@@ -86,5 +94,7 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* Add custom styles here if needed */
+td{
+  border-bottom: 1px solid #f87171;
+}
 </style>
