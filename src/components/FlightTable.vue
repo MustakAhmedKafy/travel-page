@@ -13,7 +13,6 @@
             <th class="py-2 px-4 border-b">ARRIVAL</th>
             <th class="py-2 px-4 border-b">DURATION</th>
             <th class="py-2 px-4 border-b">PRICE</th>
-            <th class="py-2 px-4 border-b"></th>
           </tr>
         </thead>
         <tbody class="text-gray-500">
@@ -30,12 +29,13 @@
             <td class="py-2 px-4 border-b">{{ flight.departure }}</td>
             <td class="py-2 px-4 border-b">{{ flight.arrival }}</td>
             <td class="py-2 px-4 border-b">{{ flight.duration }}</td>
-            <td class="py-2 px-4 border-b">{{ flight.price }}</td>
-            <td class="py-2 px-4 border-b">
+            <td class="py-2 px-4 border-b text-center">
+              {{ flight.price }}
               <button class="bg-[#312e81] text-white py-1 px-3 rounded">
                 SELECT
               </button>
             </td>
+         
           </tr>
         </tbody>
       </table>
@@ -44,54 +44,45 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import axios from "axios";
 
-const flights = ref([
-  {
-    flight: "TK 333",
-    aircraft: "723",
-    class: "E",
-    fare: "EF1PXOW",
-    route: "DAC - IST",
-    departure: "2022-11-22T23:30:00",
-    arrival: "2022-11-23T05:40:00",
-    duration: "19H 00M",
-    price: "632.30",
-  },
-  {
-    flight: "TK 73H",
-    aircraft: "1865",
-    class: "E",
-    fare: "EF1PXOW",
-    route: "IST - FCO",
-    departure: "2022-11-23T12:55:00",
-    arrival: "2022-11-23T13:30:00",
-    duration: "19H 25M",
-    price: "632.30",
-  },
-  {
-    flight: "TK 333",
-    aircraft: "713",
-    class: "E",
-    fare: "EF1PXOW",
-    route: "DAC - IST",
-    departure: "2022-11-22T06:55:00",
-    arrival: "2022-11-22T12:55:00",
-    duration: "19H 25M",
-    price: "632.30",
-  },
-  {
-    flight: "TK 73H",
-    aircraft: "1361",
-    class: "E",
-    fare: "EF1PXOW",
-    route: "IST - FCO",
-    departure: "2022-11-22T20:30:00",
-    arrival: "2022-11-22T21:20:00",
-    duration: "19H 25M",
-    price: "632.30",
-  },
-]);
+const flights = ref([]);
+
+onMounted(async () => {
+  try {
+    const response = await axios.get("/data.json");
+    const flightData = response.data.flightOffers || [];
+
+    // Parse the flight data to the required format
+    flights.value = flightData.map((offer) => {
+      const itinerary = offer.itineraries[0] || {};
+      const segments = itinerary.segments || [];
+
+      return {
+        flight: segments
+          .map((seg) => `${seg.carrierCode}${seg.flightNumber}`)
+          .join(", "),
+        aircraft: segments.map((seg) => seg.aircraft || "N/A").join(", "),
+        class:
+          offer.class && offer.class[0] ? offer.class[0].join(", ") : "N/A",
+        fare:
+          offer.fareBasis && offer.fareBasis[0]
+            ? offer.fareBasis[0].join(", ")
+            : "N/A",
+        route: segments
+          .map((seg) => `${seg.departure.iataCode}-${seg.arrival.iataCode}`)
+          .join(", "),
+        departure: segments.map((seg) => seg.departure.at).join(", "),
+        arrival: segments.map((seg) => seg.arrival.at).join(", "),
+        duration: itinerary.duration || "N/A",
+        price: offer.price || "N/A",
+      };
+    });
+  } catch (error) {
+    console.error("Error fetching flight data:", error);
+  }
+});
 </script>
 
 <style scoped>

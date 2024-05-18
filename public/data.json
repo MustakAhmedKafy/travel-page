@@ -1,0 +1,352 @@
+{
+  "flightOffers": [
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T23:30:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-23T05:40:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "723",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-23T12:55:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T13:30:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1865",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "19H 00M"
+        }
+      ],
+      "price": "632.30",
+      "fareBasis": [["EF1PXOW", "EF1PXOW"]],
+      "class": [["E", "E"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T06:55:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-22T12:55:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "713",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-22T20:30:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-22T21:20:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1361",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "19H 25M"
+        }
+      ],
+      "price": "632.30",
+      "fareBasis": [["EF1PXOW", "EF1PXOW"]],
+      "class": [["E", "E"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T23:30:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-23T05:40:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "723",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-23T17:25:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T18:00:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1863",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "23H 30M"
+        }
+      ],
+      "price": "632.30",
+      "fareBasis": [["EF1PXOW", "EF1PXOW"]],
+      "class": [["E", "E"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T23:30:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-23T05:40:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "723",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-23T20:30:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T21:20:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1361",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "26H 50M"
+        }
+      ],
+      "price": "632.30",
+      "fareBasis": [["EF1PXOW", "EF1PXOW"]],
+      "class": [["E", "E"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T09:55:00" },
+              "arrival": { "iataCode": "DXB", "at": "2022-11-22T13:20:00" },
+              "marketingCarrier": "EK",
+              "carrierCode": "EK",
+              "flightNumber": "583",
+              "aircraft": "77W"
+            },
+            {
+              "departure": { "iataCode": "DXB", "at": "2022-11-22T15:05:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-22T18:45:00" },
+              "marketingCarrier": "EK",
+              "carrierCode": "EK",
+              "flightNumber": "95",
+              "aircraft": "388"
+            }
+          ],
+          "duration": "13H 50M"
+        }
+      ],
+      "price": "725.57",
+      "fareBasis": [["QSSOPBD1", "QSSOPBD1"]],
+      "class": [["Q", "Q"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T18:40:00" },
+              "arrival": { "iataCode": "DXB", "at": "2022-11-22T22:10:00" },
+              "marketingCarrier": "EK",
+              "carrierCode": "EK",
+              "flightNumber": "587",
+              "aircraft": "77W"
+            },
+            {
+              "departure": { "iataCode": "DXB", "at": "2022-11-23T15:05:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T18:45:00" },
+              "marketingCarrier": "EK",
+              "carrierCode": "EK",
+              "flightNumber": "95",
+              "aircraft": "388"
+            }
+          ],
+          "duration": "29H 05M"
+        }
+      ],
+      "price": "725.57",
+      "fareBasis": [["QSSOPBD1", "QSSOPBD1"]],
+      "class": [["Q", "Q"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T23:30:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-23T05:40:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "723",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-23T09:10:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T09:45:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1861",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "15H 15M"
+        }
+      ],
+      "price": "732.30",
+      "fareBasis": [["OF1PXOW", "OF1PXOW"]],
+      "class": [["O", "O"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T06:55:00" },
+              "arrival": { "iataCode": "IST", "at": "2022-11-22T12:55:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "713",
+              "aircraft": "333"
+            },
+            {
+              "departure": { "iataCode": "IST", "at": "2022-11-22T17:25:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-22T18:00:00" },
+              "marketingCarrier": "TK",
+              "carrierCode": "TK",
+              "flightNumber": "1863",
+              "aircraft": "73H"
+            }
+          ],
+          "duration": "15H 05M"
+        }
+      ],
+      "price": "732.30",
+      "fareBasis": [["OF1PXOW", "OF1PXOW"]],
+      "class": [["O", "O"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T03:55:00" },
+              "arrival": { "iataCode": "DOH", "at": "2022-11-22T06:30:00" },
+              "marketingCarrier": "QR",
+              "carrierCode": "QR",
+              "flightNumber": "643",
+              "aircraft": "788"
+            },
+            {
+              "departure": { "iataCode": "DOH", "at": "2022-11-22T08:20:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-22T13:45:00" },
+              "marketingCarrier": "QR",
+              "carrierCode": "QR",
+              "flightNumber": "131",
+              "aircraft": "321"
+            }
+          ],
+          "duration": "14H 50M"
+        }
+      ],
+      "price": "1406.82",
+      "fareBasis": [["MFLXOW", "MFLXOW"]],
+      "class": [["M", "M"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T18:45:00" },
+              "arrival": { "iataCode": "DOH", "at": "2022-11-22T21:20:00" },
+              "marketingCarrier": "QR",
+              "carrierCode": "QR",
+              "flightNumber": "635",
+              "aircraft": "788"
+            },
+            {
+              "departure": { "iataCode": "DOH", "at": "2022-11-23T08:20:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T13:45:00" },
+              "marketingCarrier": "QR",
+              "carrierCode": "QR",
+              "flightNumber": "131",
+              "aircraft": "321"
+            }
+          ],
+          "duration": "23H 00M"
+        }
+      ],
+      "price": "1406.82",
+      "fareBasis": [["MFLXOW", "MFLXOW"]],
+      "class": [["M", "M"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T20:40:00" },
+              "arrival": { "iataCode": "AUH", "at": "2022-11-23T00:45:00" },
+              "marketingCarrier": "EY",
+              "carrierCode": "EY",
+              "flightNumber": "1367",
+              "aircraft": "789"
+            },
+            {
+              "departure": { "iataCode": "AUH", "at": "2022-11-23T02:15:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T06:20:00" },
+              "marketingCarrier": "EY",
+              "carrierCode": "EY",
+              "flightNumber": "85",
+              "aircraft": "320"
+            }
+          ],
+          "duration": "14H 40M"
+        }
+      ],
+      "price": "833.57",
+      "fareBasis": [["QOWDS5BD", "QOWDS5BD"]],
+      "class": [["Q", "Q"]],
+      "seat": [["9", "9"]]
+    },
+    {
+      "itineraries": [
+        {
+          "segments": [
+            {
+              "departure": { "iataCode": "DAC", "at": "2022-11-22T22:30:00" },
+              "arrival": { "iataCode": "AUH", "at": "2022-11-23T02:35:00" },
+              "marketingCarrier": "EY",
+              "carrierCode": "EY",
+              "flightNumber": "343",
+              "aircraft": "789"
+            },
+            {
+              "departure": { "iataCode": "AUH", "at": "2022-11-23T02:15:00" },
+              "arrival": { "iataCode": "FCO", "at": "2022-11-23T06:20:00" },
+              "marketingCarrier": "EY",
+              "carrierCode": "EY",
+              "flightNumber": "85",
+              "aircraft": "320"
+            }
+          ],
+          "duration": "36H 50M"
+        }
+      ],
+      "price": "833.57",
+      "fareBasis": [["QOWDS5BD", "QOWDS5BD"]],
+      "class": [["Q", "Q"]],
+      "seat": [["9", "9"]]
+    }
+  ]
+}
