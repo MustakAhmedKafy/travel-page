@@ -1,7 +1,7 @@
 <template>
   <h2 class="text-2xl font-bold text-[#111827] md:ps-12 ps-6 pt-2">Master Price</h2>
   <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
-  <div class="container mx-auto md:px-12 px-6">
+  <div class="container mx-auto md:px-12 px-3">
     <div class="mx-auto pb-8 pt-2">
       <div class="flex space-x-2 items-center justify-center mb-4">
         <div class="inline-flex rounded-md shadow-sm" role="group">

@@ -13,6 +13,7 @@ cd travel-page
 # Install dependencies:
 
 Ensure you have Node.js and npm installed. Then, run:
+
 npm install
 
 # Start the development server:
@@ -37,10 +38,10 @@ UI Components: Utilized Flowbite to enhance the UI with pre-designed components 
 
 Here are URLs for two of my live frontend projects:
 
-Project One: Flight Finder
+Project One: Munchkin Nursery School
 https://mustakkafy.com/munchkin_school/
 
-Project Two: Hotel Booking Platform
+Project Two: Real Estate Website
 https://mustakahmedkafy.github.io/RealEstate/
 
 # Top Personal Git Repositories
